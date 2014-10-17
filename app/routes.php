@@ -8,7 +8,11 @@ Route::get('/', function(){
 
 # Lorem Ipsum Generator get & post
 Route::get('/loremipsum', function(){
-	return View::make('loremipsum');
+	$output = Input::get('paragraphs');
+	$generator = new Badcow\LoremIpsum\Generator();
+	$paragraphs = $generator->getParagraphs($output);
+	return View::make('loremipsum')
+		->with('paragraphs', $paragraphs);
 });
 Route::post('/loremipsum', function(){
 
