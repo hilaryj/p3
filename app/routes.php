@@ -24,24 +24,24 @@ Route::get('usergenerator', function(){
 Route::post('usergenerator', function(){
 
 	$faker = Faker\Factory::create();
-
 	$usernumber = Input::Get('users');
-	$usersgenerated = ""; #empty at first
+	$usersgenerated = "";
 	$birthday = Input::Get('birthdays');
 	$tagline = Input::Get('taglines');
 
-	for($i=0; $i<$usernumber; $i++) {
-		
-		$usersgenerated .= '<p>' . $faker->name . '</p>';
-		
-		if(isset($birthday)) {
-			$usersgenerated .= '<p>' . $faker->date($format = 'Y-m-d', $max = 'now') . '</p>';
+		for($i=0; $i<$usernumber; $i++) {
+
+			$usersgenerated .= '<p>' . $faker->name . '</p>';
+			
+			if(isset($birthday)) {
+				$usersgenerated .= '<p>' . $faker->date($format = 'Y-m-d', $max = 'now') . '</p>';
+			}
+			if(isset($tagline)) {
+				$usersgenerated .= '<p>' . $faker->text($maxNbChars = 12) . '</p>';
+			}
 		}
-		if(isset($tagline)) {
-			$usersgenerated .= '<p>' . $faker->text($maxNbChars = 12) . '</p>';
-		}
-	}
+
 	return View::make('usergenerator')
-		->with('result', $usersgenerated);
-		# not working...
+		->with('results', $usersgenerated);
+
 });

@@ -24,5 +24,11 @@
 	{{ Form::close() }}
 
 	<!-- something is missing here... -->
+	<!-- if form results 'isset', then {{}} the results of the form -->
+	@if(isset($results))
+		
+		{{ $results }}
+
+	@endif
 
 @stop <!-- this is the content section -->
