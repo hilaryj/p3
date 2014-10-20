@@ -5,28 +5,24 @@
 @stop
 
 @section('content')
+
 	<h1>User Generator</h1>
 
-	{{ Form::open(array('url' => '/loremipsum', 'method' => 'GET')) }}
+	{{ Form::open(array('url' => 'usergenerator', 'method' => 'POST')) }}
+	
 	{{ Form::label('users','How many users?') }}
 	{{ Form::text('users'); }}
 	<br>
-	{{ Form::label('birthday', 'Include birthday?'); }}
-	{{ Form::checkbox('birthday', 'value'); }}
+	{{ Form::label('birthdays', 'Include birthday?'); }}
+	{{ Form::checkbox('birthdays', 'value'); }}
 	<br>
-	{{ Form::label('tagline', 'Include tagline?'); }}
-	{{ Form::checkbox('tagline', 'value'); }}
+	{{ Form::label('taglines', 'Include tagline?'); }}
+	{{ Form::checkbox('taglines', 'value'); }}
 	<br>
 	{{ Form::submit('Generate users!') }}
+	
 	{{ Form::close() }}
 
-	@foreach($users as $user => $result)
-		<p>{{ $result }}</p>
-	@endforeach
-	@foreach
-	@endforeach
-	@foreach
-	@endforeach
-
+	<!-- something is missing here... -->
 
 @stop <!-- this is the content section -->
