@@ -37,8 +37,9 @@ Route::post('usergenerator', function(){
 				$usersgenerated .= '<p>' . $faker->date($format = 'Y-m-d', $max = 'now') . '</p>';
 			}
 			if(isset($tagline)) {
-				$usersgenerated .= '<p>' . $faker->text($maxNbChars = 12) . '</p>';
+				$usersgenerated .= '<p>' . $faker->text($maxNbChars = 60) . '</p>';
 			}
+			$usersgenerated .= '<hr>';
 		}
 
 	return View::make('usergenerator')
