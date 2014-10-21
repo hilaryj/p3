@@ -1,6 +1,9 @@
 html, body, .container-fluid, row, .sidebar {
 	height: 100%;
 	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #F9F3E8;
 }
 .row {
 	margin-left: 0;
@@ -11,20 +14,26 @@ html, body, .container-fluid, row, .sidebar {
 	padding-right: 0;
 }
 .col-lg-3 {
-	/*background-color: #193B59;*/
 	height: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	position:fixed;
+}
+.col-lg-9 .col-lg-offset-3 { 
+	height: 100%;
+	padding-left: 0;
+	padding-right: 0;
 
 }
-.col-lg-9 { 
-	/*background-color: #F2F2F2;*/
-	height: 100%;
-}
 .sidebar {
-	padding: 10px; 
+	padding: 10px;
+	background-color: #657A6B; 
 }
 h1 {font-size: 2em; font-family: 'Alegreya Sans SC', sans-serif;}
 h2 {font-size: 1.4em;}
 p {font-size: 1em;}
+a {color: #003036;}
+a:hover {color: #89A2B3;}
 .usergenform {
 	padding: 10px;
 	border: 1px solid #26170F;

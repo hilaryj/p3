@@ -34,7 +34,7 @@ Route::post('usergenerator', function(){
 			$usersgenerated .= '<p class="fakername">' . $faker->name . '</p>';
 			
 			if(isset($birthday)) {
-				$usersgenerated .= '<p>' . $faker->date($format = 'Y-m-d', $max = 'now') . '</p>';
+				$usersgenerated .= '<p>' . $faker->date($format = 'Y-m-d', $max = 'now', $min='1950') . '</p>';
 			}
 			if(isset($tagline)) {
 				$usersgenerated .= '<p class="fakertag">' . $faker->text($maxNbChars = 60) . '</p>';
