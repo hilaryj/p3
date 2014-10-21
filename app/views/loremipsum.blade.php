@@ -6,8 +6,8 @@
 
 @section('content')
 	<h1>Lorem Ipsum Generator</h1>
-	<p>'Lorem Ipsum text' refers to filler or dummy text that is used as content when real content isn't available or required. </p>
-	<p>Using the form below, you can create your own dummy text.  Specify how many paragraphs you would like, then press the 'Generate text' button to see the results. </p>
+	<p>'Lorem Ipsum text' refers to nonsensical filler text that is used as content when real content isn't available or required. </p>
+	<p>Using the form below, you can create your own filler text.  Specify how many paragraphs you would like, then press the 'Generate text' button to see the results. </p>
 
 	{{ Form::open(array('url' => '/loremipsum', 'method' => 'GET')) }}
 	{{ Form::label('paragraphs','How many paragraphs?') }}

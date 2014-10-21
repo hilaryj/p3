@@ -8,7 +8,7 @@
 
 	<h1>User Generator</h1>
 	<p>Information about random, fictitious users can be helpful if you need filler biographical information to test out a website/app. </p>
-	<p>Use the form below to generate a random user.  You can add a birthday or tagline (in Latin <i>lorem ipsum</i> text), too. </p>
+	<p>Use the form below to generate a random user.  You can add a birthday or tagline (in Latin-esque <i>lorem ipsum</i> text), too. </p>
 
 	<div class="usergenform">
 	<h2>Generate Users: </h2>
