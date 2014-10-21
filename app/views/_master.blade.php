@@ -15,7 +15,7 @@
 		<div class="row">
 		    <div class="col-lg-3">
 		    	<div class="sidebar">
-			      <h1>CSCI E-15 Project 3</h1>
+			      <h1><a href="/">CSCI E-15 Project 3</a></h1>
 			      <h2>Lorem Ipsum Generator &amp; Random User Generator</h2>
 
 			      <ul>

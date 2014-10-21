@@ -31,13 +31,13 @@ Route::post('usergenerator', function(){
 
 		for($i=0; $i<$usernumber; $i++) {
 
-			$usersgenerated .= '<p>' . $faker->name . '</p>';
+			$usersgenerated .= '<p class="fakername">' . $faker->name . '</p>';
 			
 			if(isset($birthday)) {
 				$usersgenerated .= '<p>' . $faker->date($format = 'Y-m-d', $max = 'now') . '</p>';
 			}
 			if(isset($tagline)) {
-				$usersgenerated .= '<p>' . $faker->text($maxNbChars = 60) . '</p>';
+				$usersgenerated .= '<p class="fakertag">' . $faker->text($maxNbChars = 60) . '</p>';
 			}
 			$usersgenerated .= '<hr>';
 		}

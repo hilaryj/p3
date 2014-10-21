@@ -18,15 +18,24 @@ html, body, .container-fluid, row, .sidebar {
 .col-lg-9 { 
 	/*background-color: #F2F2F2;*/
 	height: 100%;
-	border-left: 2px solid blue;
 }
 .sidebar {
-	padding: 10px;
-	border: 1px solid red; 
-	background-color: yellow;
+	padding: 10px; 
 }
-h1 {font-size: 1.2em; font-family: 'Alegreya Sans SC', sans-serif;}
-h2 {font-size: .9em; font-family: 'Lato', sans-serif;}
+h1 {font-size: 2em; font-family: 'Alegreya Sans SC', sans-serif;}
+h2 {font-size: 1.4em;}
+p {font-size: 1em;}
+.usergenform {
+	padding: 10px;
+	border: 1px solid #26170F;
+	width: 20%;
+}
+.fakername {
+	font-weight: bold;
+}
+.fakertag {
+	font-style: italic;
+}
 .results {
 	border: 1px solid #26170F;
 	margin-bottom: 10px;
