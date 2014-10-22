@@ -45,7 +45,7 @@ a:hover {color: #89A2B3; text-decoration: underline;}
 .fakertag {
 	font-style: italic;
 }
-.fakername, .fakertag, .fakerbday p {
+.faker p {
 	color: #003036;
 }
 .results {

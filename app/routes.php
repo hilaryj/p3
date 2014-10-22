@@ -28,16 +28,20 @@ Route::post('usergenerator', function(){
 	$usersgenerated = "";
 	$birthday = Input::Get('birthdays');
 	$tagline = Input::Get('taglines');
+	$location = Input::Get('locations');
 
 		for($i=0; $i<$usernumber; $i++) {
 
-			$usersgenerated .= 'Name: <p class="fakername">' . $faker->name . '</p>';
+			$usersgenerated .= 'Name: <p class="fakername faker">' . $faker->name . '</p>';
 			
 			if(isset($birthday)) {
-				$usersgenerated .= 'Birthdate: <p class="fakerbday">' . $faker->date($format = 'Y-m-d', $max = 'now', $min='1950') . '</p>';
+				$usersgenerated .= 'Birthdate: <p class="fakerbday faker">' . $faker->date($format = 'Y-m-d', $max = 'now', $min='1950') . '</p>';
+			}
+			if(isset($location)) {
+				$usersgenerated .= 'Location: <p class="fakerloc faker">' . $faker->city . ', ' . $faker->state . '</p>';
 			}
 			if(isset($tagline)) {
-				$usersgenerated .= 'Tagline: <p class="fakertag"> "' . $faker->text($maxNbChars = 60) . '"</p>';
+				$usersgenerated .= 'Tagline: <p class="fakertag faker"> "' . $faker->text($maxNbChars = 60) . '"</p>';
 			}
 			$usersgenerated .= '<hr>';
 		}

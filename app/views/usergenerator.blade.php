@@ -20,6 +20,9 @@
 		{{ Form::label('birthdays', 'Include birthday?'); }}
 		{{ Form::checkbox('birthdays', 'value'); }}
 		<br>
+		{{ Form::label('locations', 'Include location?'); }}
+		{{ Form::checkbox('locations', 'value'); }}
+		<br>
 		{{ Form::label('taglines', 'Include tagline?'); }}
 		{{ Form::checkbox('taglines', 'value'); }}
 		<br>

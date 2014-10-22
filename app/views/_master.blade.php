@@ -7,6 +7,7 @@
     {{ HTML::style('css/bootstrap.css') }}
     {{ HTML::style('css/bootstrap-theme.css') }}
     {{ HTML::style('css/styles.css') }}
+    <link href="images/favicon.ico" rel="icon">
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900%7CLato:400,700' rel='stylesheet' type='text/css' />
 
 </head>
