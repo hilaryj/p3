@@ -36,8 +36,12 @@ a {color: #003036; text-decoration: underline;}
 a:hover {color: #89A2B3; text-decoration: underline;}
 .usergenform {
 	padding: 10px;
-	border: 1px solid #26170F;
+	border: 2px solid #26170F;
 	width: 30%;
+	margin-top: 20px;
+}
+.usergenform h2 {
+	margin-top: 5px;
 }
 .fakername {
 	font-weight: bold;

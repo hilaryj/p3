@@ -8,22 +8,22 @@
 
 	<h1>User Generator</h1>
 	<p>Information about random, fictitious users can be helpful if you need filler biographical information to test out a website/app. </p>
-	<p>Use the form below to generate a random user.  You can add a birthday or tagline (in Latin-esque <i>lorem ipsum</i> text), too. </p>
+	<p>Use the form below to generate a random user.  You can add a birthday, location and tagline (in Latin-esque <i>lorem ipsum</i> text), too. </p>
 
 	<div class="usergenform">
 	<h2>Generate Users: </h2>
 		{{ Form::open(array('url' => 'usergenerator', 'method' => 'POST')) }}
 		
-		{{ Form::label('users','How many users?') }}
+		{{ Form::label('users','How many users? ') }}
 		{{ Form::text('users'); }}
 		<br>
-		{{ Form::label('birthdays', 'Include birthday?'); }}
+		{{ Form::label('birthdays', 'Include birthday? '); }}
 		{{ Form::checkbox('birthdays', 'value'); }}
 		<br>
-		{{ Form::label('locations', 'Include location?'); }}
+		{{ Form::label('locations', 'Include location? '); }}
 		{{ Form::checkbox('locations', 'value'); }}
 		<br>
-		{{ Form::label('taglines', 'Include tagline?'); }}
+		{{ Form::label('taglines', 'Include tagline? '); }}
 		{{ Form::checkbox('taglines', 'value'); }}
 		<br>
 		{{ Form::submit('Generate users!') }}

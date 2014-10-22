@@ -11,7 +11,7 @@ Tasks included: creating a new Laravel app, incorporating Composer packages, and
 TBA -- I will post a Jing screencast link on Saturday 10/25/2014
 
 ## Details for teaching team
-
+* Ran out of time before I could do any validation (i.e. min and max value of form input)
 
 ## Outside code
 * Bootstrap (http://getbootstrap.com/)
