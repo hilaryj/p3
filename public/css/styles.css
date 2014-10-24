@@ -15,8 +15,8 @@ html, body, .container-fluid, row, .sidebar {
 }
 .col-lg-3, .col-md-3 {
 	height: 100%;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
 	position:fixed;
 }
 .col-lg-9, .col-lg-offset-3, .col-md-9, .col-md-offset-3 { 
