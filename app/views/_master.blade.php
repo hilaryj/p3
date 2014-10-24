@@ -14,7 +14,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-		    <div class="col-lg-3">
+		    <div class="col-lg-3 col-md-3">
 		    	<div class="sidebar">
 			      <h1><a href="/">CSCI E-15 Project 3</a></h1>
 			      <h2>Lorem Ipsum Generator &amp;<br> Random User Generator</h2>
@@ -26,7 +26,7 @@
 			    </div>
 			</div>
 
-	        <div class="col-lg-9 col-lg-offset-3">
+	        <div class="col-lg-9 col-lg-offset-3 col-md-9 col-md-offset-3">
 		          @yield('content')
 	        </div>
         </div> <!-- end row -->
