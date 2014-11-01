@@ -8,7 +8,7 @@ My first Laravel app: lorem ipsum generator and random user generator.
 Tasks included: creating a new Laravel app, incorporating Composer packages, and learning how to use routes and views.
 
 ## Demo
-TBA -- I will post a Jing screencast link on Saturday 10/25/2014
+<http://www.screencast.com/t/DkutkvvzFj>
 
 ## Details for teaching team
 * Ran out of time before I could do any validation (i.e. min and max value of form input)
